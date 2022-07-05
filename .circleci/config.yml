@@ -7,13 +7,8 @@ jobs:
   build:
     docker:
       - image: cimg/ruby:3.0.3-browsers
-    working_directory: ~/rails-docker-yin/src
     steps:
-      - checkout:
-          path: ~/rails-docker-yin
-      - run: | 
-            ls -la
-            pwd
+      - checkout
       - run: |
           bundle version
       - ruby/install-deps:
