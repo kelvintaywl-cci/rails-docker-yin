@@ -16,6 +16,7 @@ jobs:
           MYSQL_USER: root
     environment:
       APP_DATABASE_HOST: 127.0.0.1
+      RAILS_ENV: test
     steps:
       - checkout
       - run: |
