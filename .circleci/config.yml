@@ -1,6 +1,8 @@
 version: 2.1
 
 orbs:
+  # Since 1.2.0, install-deps has been updated with `app-dir` arg.
+  # See https://circleci.com/developer/orbs/orb/circleci/ruby?version=1.2.0#commands-install-deps
   ruby: circleci/ruby@1.8.0
 
 jobs:
